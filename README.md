@@ -1,15 +1,13 @@
-# bun-pun
+# 🚀 Quick Start
 
-To install dependencies:
+> **⚠️ Important:** Run the upgrade command immediately after cloning to ensure you are using the latest dependencies.
 
+## 1. Setup
 ```bash
 bun install
+bun run upgrade
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.10. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## 2. Quality Control
+- Format: `bun run fmt` (Uses oxfmt)
+- Lint: `bun run lint` (Uses oxlint)
+- Analyze: `bun run unused` (Uses knip)
