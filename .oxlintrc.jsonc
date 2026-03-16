@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "import"],
+  "env": {
+    "browser": true,
+    "es2022": true,
+  },
+  "categories": {
+    "correctness": "error", // Catches bugs (undefined vars, etc.)
+    "suspicious": "warn", // Catches code that likely doesn't do what you think
+    "pedantic": "warn", // Enforces best practices
+    "perf": "warn",
+    "style": "warn",
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "no-console": "warn",
+    "typescript/no-explicit-any": "error",
+    "unicorn/filename-case": ["error", { "case": "kebabCase" }],
+  },
+  "overrides": [
+    {
+      "files": ["*.test.ts", "*.spec.ts"],
+      "rules": {
+        "typescript/no-explicit-any": "off",
+      },
+    },
+  ],
+}
