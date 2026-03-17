@@ -29,6 +29,7 @@
     "no-ternary": "off",
     "no-null": "off",
     "init-declarations": "off",
+    "max-statements": ["warn", { "max": 20 }],
   },
   "overrides": [
     {
