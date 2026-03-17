@@ -12,10 +12,17 @@
 
   // Auto import and package sorting
   "sortImports": {
+    "customGroups": [
+      {
+        "groupName": "internal-absolute",
+        "elementNamePattern": ["^@/"],
+      },
+    ],
     "groups": [
       "type-import",
       ["value-builtin", "value-external"],
       "type-internal",
+      "internal-absolute",
       "value-internal",
       ["type-parent", "type-sibling", "type-index"],
       ["value-parent", "value-sibling", "value-index"],

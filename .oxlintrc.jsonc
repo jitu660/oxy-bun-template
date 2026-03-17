@@ -17,6 +17,18 @@
     "no-console": "warn",
     "typescript/no-explicit-any": "error",
     "unicorn/filename-case": ["error", { "case": "kebabCase" }],
+    "import/no-relative-parent-imports": "error",
+
+    // off overrides.
+    "sort-keys": "off",
+    "import/no-named-export": "off",
+    "import/prefer-default-export": "off",
+    "sort-imports": "off",
+    "import/no-nodejs-modules": "off",
+    "prefer-destructuring": "off",
+    "no-ternary": "off",
+    "no-null": "off",
+    "init-declarations": "off",
   },
   "overrides": [
     {

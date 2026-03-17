@@ -8,9 +8,9 @@
     "fmt:check": "oxfmt --check",
     "lint": "oxlint .",
     "lint:fix": "oxlint --fix",
-    "start": "bun index.ts",
-    "upgrade": "bun update --latest",
-    "unused": "knip"
+    "start": "bun src/index.ts",
+    "unused": "knip",
+    "upgrade": "bun update --latest"
   },
   "dependencies": {},
   "devDependencies": {
