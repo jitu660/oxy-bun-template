@@ -4,6 +4,7 @@
   "type": "module",
   "module": "index.ts",
   "scripts": {
+    "prepare": "bun-git-hooks",
     "start": "bun src/index.ts",
     "upgrade": "bun update --latest",
     "fmt": "oxfmt",
@@ -24,6 +25,7 @@
     "typescript": "^5.9.3"
   },
   "git-hooks": {
-    "pre-commit": "bun run lint && bun run fmt:check"
+    "pre-commit": "bun run lint && bun run fmt:check",
+    "commit-msg": "echo 'Skipping bun-git-hooks default commit-msg check...' && exit 0"
   }
 }
