@@ -4,13 +4,13 @@
   "type": "module",
   "module": "index.ts",
   "scripts": {
+    "start": "bun src/index.ts",
+    "upgrade": "bun update --latest",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "lint": "oxlint .",
     "lint:fix": "oxlint --fix",
-    "start": "bun src/index.ts",
-    "unused": "knip",
-    "upgrade": "bun update --latest"
+    "unused": "knip"
   },
   "dependencies": {},
   "devDependencies": {

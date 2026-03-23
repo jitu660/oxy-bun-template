@@ -30,7 +30,4 @@
     ],
     "newlinesBetween": true,
   },
-  "sortPackageJson": {
-    "sortScripts": true,
-  },
 }

@@ -2,12 +2,12 @@
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["typescript", "unicorn", "import"],
   "env": {
-    "browser": true,
+    "node": true,
     "es2022": true,
   },
   "categories": {
     "correctness": "error", // Catches bugs (undefined vars, etc.)
-    "suspicious": "warn", // Catches code that likely doesn't do what you think
+    "suspicious": "error", // Catches code that likely doesn't do what you think
     "pedantic": "warn", // Enforces best practices
     "perf": "warn",
     "style": "warn",
@@ -16,8 +16,13 @@
     "eqeqeq": "error",
     "no-console": "warn",
     "typescript/no-explicit-any": "error",
-    "unicorn/filename-case": ["error", { "case": "kebabCase" }],
+    "unicorn/filename-case": "error",
+    "unicorn/prefer-node-protocol": "error",
     "import/no-relative-parent-imports": "error",
+    "no-nested-ternary": "error",
+    "curly": ["error", "multi-or-nest", "consistent"],
+    "typescript/consistent-type-imports": "error",
+    "unicorn/catch-error-name": ["error", { "name": "err" }],
 
     // off overrides.
     "sort-keys": "off",
